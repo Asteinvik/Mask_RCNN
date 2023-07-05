@@ -2103,7 +2103,7 @@ class MaskRCNN():
         exclude: list of layer names to exclude
         """
         import h5py
-        from keras.engine import saving
+        from tensorflow.python.keras.saving import hdf5_format
         
         if exclude:
             by_name = True
